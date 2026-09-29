@@ -14,18 +14,26 @@ Rails.application.routes.draw do
 
   # 7 CRUD routes with actions
 
+  #READ
   # index    # Read all resources
+  get "tasks", to: "tasks#index"
 
-  # show     # Read one resource
-
+  #CREATE
   # new      # display form for a resource creation
-
+  get "tasks/new", to: "tasks#new", as: :new_task
   # create   # Create resource
+  post "tasks", to: "tasks#create"
+  # show     # Read one resource
+  get "tasks/:id", to: "tasks#show", as: :task
 
+  # UPDATE
   # edit     # display form for a resource update
-
+  get "tasks/:id/edit", to: "tasks#edit", as: :edit_task
   # update   # Update resource
+  patch "", to: "tasks#update"
 
+  #DELETE
   # destroy  # Delete resource
+  delete "tasks/:id", to: "tasks#destroy"
 
 end
