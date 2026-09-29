@@ -14,11 +14,11 @@ Rails.application.routes.draw do
 
   # 7 CRUD routes with actions
 
-  #READ
+  # READ
   # index    # Read all resources
   get "tasks", to: "tasks#index"
 
-  #CREATE
+  # CREATE
   # new      # display form for a resource creation
   get "tasks/new", to: "tasks#new", as: :new_task
   # create   # Create resource
@@ -35,5 +35,8 @@ Rails.application.routes.draw do
   #DELETE
   # destroy  # Delete resource
   delete "tasks/:id", to: "tasks#destroy"
+
+  # # CRUD refactored with resources
+  # resources :tasks
 
 end
