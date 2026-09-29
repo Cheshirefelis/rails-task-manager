@@ -29,9 +29,9 @@ Rails.application.routes.draw do
 
   # # UPDATE
   # # edit     # display form for a resource update
-  # get "tasks/:id/edit", to: "tasks#edit", as: :edit_task
+  get "tasks/:id/edit", to: "tasks#edit", as: :edit_task
   # # update   # Update resource
-  # patch "", to: "tasks#update"
+  patch "tasks/:id", to: "tasks#update"
 
   # #DELETE
   # # destroy  # Delete resource
