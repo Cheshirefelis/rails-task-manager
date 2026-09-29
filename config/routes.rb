@@ -11,4 +11,21 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # 7 CRUD routes with actions
+
+  # index    # Read all resources
+
+  # show     # Read one resource
+
+  # new      # display form for a resource creation
+
+  # create   # Create resource
+
+  # edit     # display form for a resource update
+
+  # update   # Update resource
+
+  # destroy  # Delete resource
+
 end
